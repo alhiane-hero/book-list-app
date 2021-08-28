@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book List</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="container-book">
+            <h2>Book List</h2>
+            <div class="notes" id="notes"></div>
+            <form action="#" id="bookForm">
+                <div class="input-box">
+                    <label for="titleInput">Add Book</label>
+                    <input type="text" id="titleInput">
+                </div>
+                <div class="input-box">
+                    <label for="authorInput">Author</label>
+                    <input type="text" id="authorInput">
+                </div>
+                <div class="input-box">
+                    <label for="isbnInput">ISBN</label>
+                    <input type="text" id="isbnInput">
+                </div>
+                <input type="submit" value="Add Book">
+            </form>
+            <div class="books-table">
+                <div class="table-head">
+                    <div class="table-data"><h4>Title</h4></div>
+                    <div class="table-data"><h4>Author</h4></div>
+                    <div class="table-data"><h4>ISBN</h4></div>
+                    <div class="table-data"><h4>Remove</h4></div>
+                </div>
+                <div class="table-body" id="tableBody"></div>
+            </div>
+            <div class="clear-box">
+                <a href="#" class="clear-btn" id="clearBtn">Clear All Books</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
